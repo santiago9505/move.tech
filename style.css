@@ -182,6 +182,7 @@ hr {
     display: grid;
     grid-template-rows: 1fr 1fr;
     background-image: url(./images/final.jpg);
+    border-inline-end: 4rem solid #FFD65B;
 }
 
 
