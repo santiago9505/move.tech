@@ -176,3 +176,39 @@ hr {
     color: #1F2C30;
     margin: 3rem 9rem;
 }
+.last-section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-image: url(./images/final.jpg);
+}
+
+
+.puntuacion {
+    color: white;
+    margin: 8rem 4rem;
+    justify-items: start;
+    border-bottom: 1rem solid #FFD65B;
+}
+
+.last-section p {
+    color: white;
+    margin: 0 4rem;
+}
+.weird {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.weird-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+}
+.correo {
+    font-size: 3rem;
+    color: white;
+    margin: 0.3rem 4rem;
+    justify-items: end;
+    border-bottom: 1rem solid #FFD65B;
+}
