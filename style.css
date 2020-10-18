@@ -211,7 +211,7 @@ hr {
     margin-top: 2.5rem;
 }
 .last-items:nth-of-type(1) {
-    align-self: end;
+    align-self: center;
 }
 .last-items:nth-of-type(1) hr {
     width: 31rem;
@@ -244,11 +244,19 @@ hr {
 }
 
 button {
-    margin: 0.5rem 0.5rem;
+    margin: 0.5rem;
     display: block;
     height: 4rem;
     width: 19rem;
     border-radius: 10rem;
+}
+
+.simulacion {
+    padding: 1rem;
+    height: 3rem;
+    margin: 0.5rem;
+    display: block;
+    border-radius: 2rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -268,14 +276,17 @@ button {
     margin: 3rem;
     }
     .container {
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
+        height: auto;
         padding: 0;
+    }
+    .nav-img {
+        display: none;
     }
     li.item {
         display: flex;
         flex-wrap: wrap;
-        margin: auto;
+        margin: 0.4rem;
         margin-left: 0;
         padding: 0;
         left: 0;
@@ -283,7 +294,6 @@ button {
     .main {
         border-inline-start: none;
     }
-
     .logo-main {
         width: 10rem;
         position: absolute;
@@ -360,7 +370,7 @@ button {
         }
         .last-items:nth-of-type(3) {
             display: none;
-            }
+        }
 }
 @media screen and (max-width: 480px) {
     body {

@@ -106,7 +106,23 @@
         <article class="last-items">
             <h3>Simula la rentabilidad que puedes obtener</h3>
             <hr class="last-line">
-            <button onclick="enlace()" href="https://forms.gle/1idEkpRjWUEfn3Ad9">Simular</button>
+            <form action="">
+                <label for="">
+                    <span>Cuanto dinero quieres invertir?</span>
+                    <input class="simulacion" id="monto" type="number">
+                </label>
+                <label for="">
+                    <span>A qué plazo deseas invertir</span>
+                    <input class="simulacion" id="otro" list="plazo">
+                    <datalist id="plazo">
+                        <option value="6 meses"></option>
+                        <option value="12 meses"></option>
+                        <option value="24 meses"></option>
+                        <option value="36 meses"></option>
+                    </datalist>
+                </label>
+            </form>
+            <button onclick="obtenerRentabilidad()">Simular</button>
         </article>
         <article class="last-items">
            
@@ -122,6 +138,7 @@
             <button>Otro valor</button>
         </article>
     </section>
+    
     <script src="index.js"></script>
 </body>
 </html>
