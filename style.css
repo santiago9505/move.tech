@@ -266,86 +266,237 @@ button {
     height: 1rem;
     width: 60%;
     margin: 3rem;
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav-img {
-    display: none;
-}
-.main {
-    border-inline-start: none;
-}
-
-.logo-main {
-    width: 10rem;
-    position: absolute;
-    top: 20%;
-    margin: 30px;
-}
-.txt-on {
-    font-size: 6rem;
-    color: white;
-    position: absolute;
-    top: 28%;
-}
-.txt-down {
-    margin-left: 3%;
-    padding: 1rem;
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    top: 48%;
-    background-color:  rgb(31, 44, 48);
-    border-radius: 1rem;
-}
-.item:nth-of-type(1) {
-    text-align: start;
-    margin-left: 6rem;
-}
-.nosotros {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    border-inline-start: none;
-}
-.como-funciona {
-    display: flex;
-    flex-wrap: wrap;
-    border-inline-start: none;
-}
-.como-funciona h2{
-    margin: auto;
-    padding: 1rem;
-}
-.como-funciona hr {
-    display: none;
-}
-.como-funciona img {
-    width: 20%;
-}
-.last-section{
-    display: flex;
-    flex-wrap: wrap;
-}
-.last-section {
-    width: 100%;
-    height: 150vh;
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(./images/final.jpg);
-    border-inline-end: none;
     }
-.last-items {
-    display: block;
-    color: white;
-    padding: 1rem;
-    margin: 1rem;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
     }
+    li.item {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-left: 0;
+        padding: 0;
+        left: 0;
+    }
+    .main {
+        border-inline-start: none;
+    }
+
+    .logo-main {
+        width: 10rem;
+        position: absolute;
+        top: 20%;
+        margin: 30px;
+    }
+    .txt-on {
+        font-size: 6rem;
+        color: white;
+        position: absolute;
+        top: 28%;
+    }
+    .txt-down {
+        margin-left: 3%;
+        padding: 1rem;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        top: 48%;
+        background-color:  rgb(31, 44, 48);
+        border-radius: 1rem;
+    }
+    .item:nth-of-type(1) {
+        text-align: start;
+        margin-left: 6rem;
+    }
+    .nosotros {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        border-inline-start: none;
+    }
+    .como-funciona {
+        height: 180vh;
+        display: flex;
+        flex-wrap: wrap;
+        border-inline-start: none;
+        align-items: center;
+    }
+    .item-2 {
+        width: 100%;
+    }
+
+    .como-funciona h2{
+        margin: auto;
+        padding: 1rem;
+    }
+    .como-funciona hr {
+        display: none;
+    }
+    .como-funciona img {
+        width: 20%;
+    }
+    .last-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .last-section {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(./images/final.jpg);
+        border-inline-end: none;
+        }
+        .last-items {
+            height: 10%;
+            margin: 0;
+        }
+        .item-3 {
+            width: 100%;
+        }
+        .last-items:nth-of-type(2) {
+        display: none;
+        }
+        .last-items:nth-of-type(3) {
+            display: none;
+            }
 }
 @media screen and (max-width: 480px) {
-    
+    body {
+        font-size: 0.1;
+    }
+    .line {
+     top: 20%;
+     position: absolute;
+     background-color: #FFD65B;
+     height: 1rem;
+     width: 60%;
+     margin: 3rem;
+     }
+     .container {
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .item:nth-of-type(1) {
+         display: none;
+     }
+     li.item {
+         display: flex;
+         flex-wrap: wrap;
+         margin: auto;
+     }
+     a {
+         font-size: 1rem;
+     }
+     .main {
+         border-inline-start: none;
+     }
+ 
+     .logo-main {
+         width: 7rem;
+         position: absolute;
+         top: 10%;
+         margin: 2rem;
+     }
+     .txt-on {
+         font-size: 4rem;
+         color: white;
+         position: absolute;
+         top: 13%;
+     }
+     .txt-down {
+         margin-left: 7%;
+         padding: 1rem;
+         font-size: 1rem;
+         color: white;
+         position: absolute;
+         top: 28%;
+         background-color:  rgb(31, 44, 48);
+         border-radius: 1rem;
+     }
+     .item:nth-of-type(1) {
+         text-align: start;
+         margin-left: 6rem;
+     }
+     .nosotros {
+         display: flex;
+         flex-wrap: wrap-reverse;
+         border-inline-start: none;
+     }
+     .nosotros img {
+        height: 60vh;
+    }
+     .nosotros-txt {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nosotros-txt h1 {
+        margin-top: 0.7rem;
+        /* border: 3px solid red; */
+        align-self: start;
+        font-size: 5rem;
+
+    }
+    hr {
+        height: 10px;
+        width: 90%;
+        /* border: 3px solid red; */
+    }
+    .nosotros-txt h3 {
+        margin-top: 1rem;
+        /* border: 3px solid red; */
+        align-items: justify;
+        font-size: 2rem;
+    }
+     
+     .como-funciona {
+         height: 180vh;
+         display: flex;
+         flex-wrap: wrap;
+         border-inline-start: none;
+         align-items: center;
+     }
+     .item-2 {
+         width: 100%;
+     }
+ 
+     .como-funciona h2{
+         margin: auto;
+         padding: 1rem;
+     }
+     .como-funciona hr {
+         display: none;
+     }
+     .como-funciona img {
+         width: 20%;
+     }
+     .last-section{
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .last-section {
+         width: 100%;
+         height: 150vh;
+         display: flex;
+         flex-wrap: wrap;
+         background-image: url(./images/final.jpg);
+         border-inline-end: none;
+         }
+         .last-items {
+             height: 10%;
+             margin: 0;
+         }
+         .item-3 {
+             width: 100%;
+         }
+         .last-items:nth-of-type(2) {
+         display: none;
+         }
+         .last-items:nth-of-type(3) {
+             display: none;
+             }
 }
 
 @media screen and (max-width: 320px) {
