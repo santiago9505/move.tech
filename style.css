@@ -8,20 +8,7 @@
 }
 h1 {
     font-size: 6rem;
-    animation-duration: 3s;
-    animation-name: slidein;
-} 
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%
-    }
-  
-    to {
-      margin-left: 2.2%;
-      width: 100%;
-    }
-  }
+}
 h2 {
     font-size: 3.6rem;
 }
@@ -83,6 +70,21 @@ a {
     background-color: rgb(31, 44, 48);
     border-inline-start: 4rem solid #FFD65B;
 }
+.main h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+} 
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 2.2%;
+      width: 100%;
+    }
+  }
 .txt-on {
     margin: 2.5rem;
     font-size: 8rem;
@@ -235,6 +237,9 @@ hr {
     width: 31rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.last-items:nth-of-type(5) {
+    color: rgb(130, 253, 92);
 }
 .last-items:nth-of-type(6) {
     margin-top: 0;
