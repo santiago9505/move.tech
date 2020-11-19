@@ -22,6 +22,10 @@ function obtenerRentabilidad() {
   };
  
   let resultado = Math.floor(monto * (1 + plazo/12 * tasa/100));
-  texto.textContent = `El dinero que recibirás es de: $${resultado} es decir, obtendrás una rentabilidad de $${resultado - monto} en un plazo de ${plazo} meses`;
+  let resultado_miles = new Intl.NumberFormat(["ban", "id"]).format(resultado);
+  rentabilidad = resultado - monto
+  rentabilidad_miles = new Intl.NumberFormat(["ban", "id"]).format(rentabilidad);
+  texto.textContent = `El dinero que recibirás es de: $${resultado_miles} es decir, obtendrás una rentabilidad de $${rentabilidad_miles} en un plazo de ${plazo} meses`;
   plazo = parseInt(document.getElementById("otro").value);
+  
 }
